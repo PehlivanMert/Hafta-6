@@ -40,7 +40,7 @@ public class DBConnect {
 
             ResultSet data = statement.executeQuery(sql);
             while (data.next()) {
-                System.out.println(data.getInt("id") + " " + data.getString("name") + " " + data.getString("position") + " " + data.getInt("salary"));
+                System.out.println(" ID: " + data.getInt("id") + " Name: " + data.getString("name") + " Position: " + data.getString("position") + " Salary: " + data.getInt("salary"));
             }
             statement.close();
             preparedStatement.close();
